@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajal Hansda -Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="Javascript" href="Javascript.js">
+    <script src="https://kit.fontawesome.com/92255598c4.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image\logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+
+                <p>Security Tester..</p>
+                <h1>Hi, I'm Sajal Hansda From India.</h1>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!----------------------------- about ---------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image\ab.png" >
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        To work with an organization where can learn new skills and increase my abilities for the organizational goals as well as myself.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Training')">Certification & Training</p>
+                        <p class="tab-links" onclick="opentab('Education')" >Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                        <li><span>Ethical Hacking</span><br>Basics ofInformation Security and Computer Networking, InformationGathering and Basics of Web Development, Introduction toWeb VAPT, OWASP and
+                            SQL Injections, Advanced WebApplication Attacks, Client Side Attacks, Identifying SecurityMisconfigurations and Exploiting Outdated Web Applications,Automating VAPT and Secure Code Development,Documenting and Reporting Vulnerabilitie.</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Fundamental Interacton </span><br>Networking, Oops concept(Intermediate)</li>
+                            <li><span>Programming Language</span><br>Java , C Programming </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Training">
+                        <ul>
+                        
+                            <li><span>Training</span><br>Top performer (Ethical Hacking Training) Verified and added by Internshala Trainings</li>
+                            <li><span>Certification  </span> <br> - Ethical Hacking <br>- Python <br>- Certification of Information Technology Application</li>
+                            
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                        
+                            
+                            <li><span>B.Tech, Computer Science & Engineering </span><br> Durgapur Institute of Advanced Technology and Management <br> [2020 - 2024]</li>
+                            <li><span>Diploma, Computer Science And Technology(CST)  </span><br> Bishnupur Public Institute Of Engineering ( BPIE) <br> [2018 - 2021] </li>
+                            <li><span>12th [ West Bengal Council of Higher Secondary Education ] </span><br> Kapista High School <br> Batch -[2018 ] </li>
+                            <li><span>10th [ West Bengal Board of Secondary Education ]</span><br> Kapista High School <br> Batch -[2016] </li>
+                            
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------servies-------------------------->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <h2>Ethical Hacking</h2>
+                <p>dhjfijdsj</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>dhjfijdsj</p>
+                <a href="#">Learn more</a>
+            </div>
+
+       
+
+        </div>
+    </div>
+</div>
+<!------------------------------Portfolio------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image\sec.jpg" >
+                <div class="layer">
+                    <h3>A diverse analysis for Intrusion Detection   within Edge Computing.</h3>
+                    <p>That project motive is improve the intrusion detection system.   </p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="image\face.jpg" >
+                <div class="layer">
+                    <h3>Face Recognition using Python.</h3>
+                    <p>The Face Recognition System is detect the person who having in the existing database.   </p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+
+
+        var tablinks = document.getElementsByClassName("tab-links")
+           var tabcontents = document.getElementsByClassName("tab-contents")
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+
+    document.getElementById(tabname).classList.add("active-tab")
+}
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
